@@ -1,0 +1,33 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+
+  padding-right: 4.8rem;
+
+  margin-bottom: 8rem;
+
+  &--reversed {
+    flex-direction: row-reverse;
+    padding-left: 4.8rem;
+    padding-right: 0;
+
+    & .info__image {
+      border-radius: 329px 0 0 329px;
+    }
+  }
+
+  &__image {
+    border-radius: 0 329px 329px 0;
+    width: 68.3rem;
+  }
+
+  &__text {
+    padding: 0 6rem;
+  }
+
+  &__headline {
+    margin-bottom: 2rem;
+  }
+}

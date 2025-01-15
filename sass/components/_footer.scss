@@ -1,0 +1,17 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 4rem;
+
+  &__logo {
+    filter: invert(1);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+}

@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import InfoBlocks from "@/components/InfoBlocks";
 
-export default function Home() {
+export default function ExperiencePage() {
   const data = {
     headline: "the experience.",
     text: (
@@ -34,9 +34,14 @@ export default function Home() {
   return (
     <div>
       <main>
-        <HeroSection headline={headline} />
+        <HeroSection
+          headline={headline}
+          theme="orange"
+          imgSrc={"/assets/hero-experience.png"}
+        />
         <InfoBlocks data={data} />
         <InfoBlocks data={{ ...data, reversed: true }} />
+        <InfoBlocks data={data} />
       </main>
     </div>
   );
